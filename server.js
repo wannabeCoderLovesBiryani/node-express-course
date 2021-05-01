@@ -14,7 +14,6 @@ app.get('/users',function(req,res){
 	})
 })
 
-app.listen(8000,function(){console.log('server is listening')})
 
 app.get('/users/:id',function(req,res){
 	console.log(req.params.id)
@@ -24,4 +23,7 @@ app.get('/users/:id',function(req,res){
 		user: req.params.id
 	})
 })
+
+
+app.listen(8000,function(){console.log('server is listening')})
 
